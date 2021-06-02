@@ -1,5 +1,6 @@
 package com.example.demo.Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,10 +11,16 @@ public class User {
 	
 	@Id
 	private int id;
+	
+	@Column(name="username")
 	private String username;
+	@Column(name="firstname")
 	private String firstname;
+	@Column(name="lastname")
 	private String lastname;
+	@Column(name="age")
 	private int age;
+	@Column(name="password")
 	private String password;
 	
 	public User() {

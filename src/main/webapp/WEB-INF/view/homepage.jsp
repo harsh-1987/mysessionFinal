@@ -25,7 +25,7 @@
 					<li><a href="/login">Login</a></li>
 					<li><a href="/logout">Logout</a></li>
 					<li><a href="/register">New Registration</a></li>
-					<li><a href="/show-users">All Users</a></li>
+					
 				</ul>
 			</div>
 		</div>
@@ -43,11 +43,13 @@
 			<h4></h4>
 		</div>
 		
-			
-			<p> This is 1st Demo </p>
-			<div class="alert alert-success">
-			<h4>Ecare Migration</h4>
-		</div>
+		<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/AdminLoginPage">WEB_Auth</a></li>
+					<li><a href="/show-users">MBL_Auth</a></li>
+					
+				</ul>
+			</div>
 		
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
