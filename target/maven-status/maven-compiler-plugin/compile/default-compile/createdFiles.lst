@@ -1,7 +1,0 @@
-com\example\demo\Model\AdminLogin.class
-com\example\demo\MySessionApplicationManagement.class
-com\example\demo\Service\UserService.class
-com\example\demo\Repository\UserRepository.class
-com\example\demo\Model\User.class
-com\example\demo\Controller\ApplicationController.class
-com\example\demo\Repository\AdminRepo.class
