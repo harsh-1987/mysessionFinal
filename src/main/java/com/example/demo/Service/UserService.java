@@ -14,7 +14,6 @@ import com.example.demo.Repository.UserRepository;
 
 
 @Service
-//@Transactional
 public class UserService {
 
 	@Autowired
@@ -26,11 +25,13 @@ public class UserService {
 
 
 	public UserService(UserRepository userRepository) {
+		
 		this.userRepository=userRepository;
 
 	}
 
 	public void saveMyUser(User user ) {
+		
 		userRepository.save(user);
 	}
 
@@ -45,39 +46,23 @@ public class UserService {
 	}
 
 	public void deleteMyUser(int id) {
+		
 		userRepository.deleteById(id);;
 	}
 
 	public User editUser(int id) {
+		
 		return userRepository.findById(id).orElse(null);
-
-
 	}
 
 	public User findByUsernameAndPassword(String username, String password)
 	{
 		return userRepository.findByUsernameAndPassword(username, password);
-
 	}
 	
-	/*public UserService(AdminRepo adminrepo)
-	{
-		this.adminrepo = adminrepo;
-	}*/
-	
-	/*public List<AdminLogin> ShowAdmin()
-	{
-		List<AdminLogin> adminData=new ArrayList<AdminLogin>();
-		for(AdminLogin admin:adminrepo.findAll())
-		{
-			adminData.add(admin);
-		}
-		return adminData;
-	}
-	*/
 	public AdminLogin findByadminNameadminPassword(String adminName, String adminPassword) {
-		return adminrepo.findByAdminNameAndAdminPassword(adminName, adminPassword);
 		
+		return adminrepo.findByAdminNameAndAdminPassword(adminName, adminPassword);
 	}
 	
 }
