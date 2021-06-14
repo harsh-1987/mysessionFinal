@@ -1,5 +1,5 @@
-FROM openjdk11:alpine-jre
-EXPOSE 9090
-ARG JAR_FILE=target/MySessionApplicationManagement.jar
-ADD ${JAR_FILE} EcarePODFinal.jar
-ENTRYPOINT ["java","-jar","/EcarePODFinal.jar"]
+FROM openjdk:11 -alpine
+EXPOSE 9000
+ARG JAR_FILE=target/EcarePOD.jar
+ADD ${JAR_FILE} MySqlDemo.jar
+ENTRYPOINT ["java","-jar","/MySqlDemo.jar"]
