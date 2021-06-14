@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -19,7 +21,7 @@ import com.example.demo.Model.User;
 import com.example.demo.Service.UserService;
 
 
-
+@SpringBootApplication
 @RestController
 public class ApplicationController {
 
@@ -115,6 +117,8 @@ public class ApplicationController {
 		}
 	}
 
-	
+	public static void main(String[] args) {
+		SpringApplication.run(ApplicationController.class, args);
+	}
 		
 }
