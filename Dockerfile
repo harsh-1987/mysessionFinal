@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:8
 EXPOSE 9090
 ARG JAR_FILE=target/MySessionApplicationManagement.jar
 ADD ${JAR_FILE} EcarePODFinal.jar
