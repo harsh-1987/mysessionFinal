@@ -9,7 +9,6 @@ HELP.md
 .settings
 .springBeans
 .sts4-cache
-.jar
 
 ### IntelliJ IDEA ###
 .idea
@@ -29,3 +28,4 @@ build/
 
 ### VS Code ###
 .vscode/
+/target/
